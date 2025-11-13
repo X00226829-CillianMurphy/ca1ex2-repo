@@ -1,0 +1,16 @@
+git init
+git branch -m master main
+git status
+git add .
+git commit -m "initial commit"
+git checkout -b feature-auth
+git status
+git add temp.cache
+git commit -m "feature-auth commit"
+git checkout main
+git add temp.cache
+git commit -m "main cache change"
+git merge feature-auth
+git remote add origin https://github.com/X00226829-CillianMurphy/ca1ex2-repo.git
+git push -u origin main
+git pull
